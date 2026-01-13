@@ -1,0 +1,114 @@
+/* Fonts */
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-weight: 400;
+  src: url("../fonts/play-v21-latin-regular.woff2") format("woff2"),
+    url("../fonts/play-v21-latin-regular.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-weight: 700;
+  src: url("../fonts/play-v21-latin-700.woff2") format("woff2"),
+    url("../fonts/play-v21-latin-700.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../fonts/roboto-v50-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 600;
+  src: url("../fonts/roboto-v50-latin-600.woff2") format("woff2");
+}
+
+:root {
+  --brend-color-dark: #011c44;
+  --brend-color-normal: #011f4a;
+  --brend-color-light: #2b7fff;
+  --primery-color-dark: #4a4a4a;
+  --primery-color-light: #747272;
+  --color-white: #ffffff;
+}
+
+/* Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-style: normal;
+  color: var(--brend-color-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.container.limited {
+  max-width: 1112px;
+}
+
+/* Link */
+.link {
+  text-decoration: none;
+  color: var(--brend-color-dark);
+}
+
+.link:hover {
+  color: var(--brend-color-light);
+}
+
+/* Hero-section */
+.hero-section {
+  padding: 120px 0 128px;
+}
+
+/* Promotion-section */
+.promotion-section {
+  padding: 0 0 88px;
+}
+
+/* Advantees-section */
+.advantees-section {
+  padding: 88px 0 48px;
+}
+
+/* Procedures-section */
+.procedures-section {
+  padding: 48px 0;
+}
+
+/* Contacts-section */
+.contacts-section {
+  padding: 48px 0 96px;
+}
+
+/* Footer */
+.footer {
+  padding: 56px;
+}
