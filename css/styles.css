@@ -69,6 +69,7 @@ ul {
 }
 
 .section-title {
+  margin-bottom: 48px;
   font-family: "Play";
   text-align: center;
   font-size: 64px;
@@ -153,7 +154,7 @@ ul {
 }
 
 .hero-container {
-  margin: 0 706px 0 206px;
+  /* margin: 0 706px 0 206px; */
   width: 100%;
   max-width: 328px;
 }
@@ -205,6 +206,7 @@ ul {
 }
 
 .promotion-title {
+  margin-bottom: 0;
   text-align: left;
 }
 
@@ -216,9 +218,9 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 40px;
   flex-basis: 100%;
   max-width: 500px;
-  gap: 40px;
 }
 
 .promotion-image {
@@ -235,8 +237,19 @@ ul {
 }
 
 .advanteges-list {
-  /* text-align: center; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.advantages-item {
+  padding: 24px 32px;
+  flex-basis: calc((100% - 112px) / 3);
+  text-align: center;
   font-size: 18px;
+  background-color: var(--color-white);
+  border-radius: 32px;
 }
 
 /* Procedures-section */
@@ -245,8 +258,31 @@ ul {
 }
 
 .procedures-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.procedures-item {
+  flex-basis: calc((100% - 32px) / 3);
+}
+
+.procedures-card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 32px;
+  aspect-ratio: 3/4;
   font-size: 22px;
   color: var(--color-white);
+  border-radius: 8px 120px 8px 120px;
+  background-image: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    var(--brend-color-dark) 101.39%
+  );
 }
 
 /* Contacts-section */
