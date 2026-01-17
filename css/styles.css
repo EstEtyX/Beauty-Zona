@@ -129,6 +129,10 @@ ul {
   cursor: pointer;
 }
 
+.form-button {
+  margin-bottom: 8px;
+}
+
 /* Header */
 .header-container {
   padding: 32px 0;
@@ -290,7 +294,29 @@ ul {
   padding: 48px 0 96px;
 }
 
+.contacts-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.contacts-map {
+  width: 100%;
+  max-width: 606px;
+  height: 480px;
+  border: none;
+  border-radius: 32px;
+}
+
+.contacts-form {
+  padding: 48px 56px;
+  text-align: center;
+  background-color: var(--brend-color-dark);
+  border-radius: 32px;
+}
+
 .contacts-form-title {
+  margin-bottom: 32px;
   font-size: 22px;
   color: var(--color-white);
 }
