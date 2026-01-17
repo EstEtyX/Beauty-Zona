@@ -69,7 +69,6 @@ ul {
 }
 
 .section-title {
-  margin-bottom: 48px;
   font-family: "Play";
   text-align: center;
   font-size: 64px;
@@ -179,11 +178,6 @@ ul {
   max-width: 232px;
 }
 
-.hero-block button {
-  align-self: flex-start; /* кнопка зліва */
-  width: auto; /* не розтягувати */
-}
-
 .hero-section-offer {
   text-align: center;
   font-size: 12px;
@@ -195,6 +189,21 @@ ul {
   padding: 0 0 88px;
 }
 
+.promotion-contaner {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.promotion-block {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  max-width: 610px;
+  gap: 40px;
+}
+
 .promotion-title {
   text-align: left;
 }
@@ -203,8 +212,21 @@ ul {
   font-size: 22px;
 }
 
-.face-image {
-  border-radius: 200px;
+.promotion-images {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 100%;
+  max-width: 500px;
+  gap: 40px;
+}
+
+.promotion-image {
+  border-radius: 50%;
+}
+
+.promotion-image.end {
+  align-self: flex-end;
 }
 
 /* Advanteges-section */
