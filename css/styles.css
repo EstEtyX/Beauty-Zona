@@ -35,6 +35,7 @@
   --primery-color-dark: #4a4a4a;
   --primery-color-light: #747272;
   --color-white: #ffffff;
+  --color-black: #000000;
 }
 
 /* Base */
@@ -164,10 +165,20 @@ ul {
 }
 
 .hero-container {
-  /* margin: 0 706px 0 206px; */
+  margin: 0 0 0 206px;
   width: 100%;
   max-width: 328px;
 }
+/* GPT */
+/* margin-left: calc(206px - (1440px - 100vw) / 2);
+  max-width: 328px; */
+
+/* @media (max-width: 1024px) {
+  .hero-container {
+    margin-left: 0;
+    max-width: 100%;
+  }
+} */
 
 .hero-section-text {
   margin-bottom: 16px;
@@ -200,17 +211,17 @@ ul {
   padding: 0 0 88px;
 }
 
-.promotion-contaner {
+.promotion-container {
   display: flex;
   justify-content: space-between;
-  gap: 32px;
+  gap: 24px;
 }
 
 .promotion-block {
   padding-top: 40px;
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
+  flex-grow: 1;
   max-width: 610px;
   gap: 40px;
 }
@@ -225,12 +236,38 @@ ul {
 }
 
 .promotion-images {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
-  flex-basis: 100%;
+  flex-grow: 1;
+  flex-basis: auto;
   max-width: 500px;
+}
+
+.promotion-star-big,
+.promotion-star-normal,
+.promotion-star-smoll {
+  position: absolute;
+}
+
+.promotion-star-big {
+  fill: var(--brend-color-dark);
+  top: 350px;
+  left: 142px;
+}
+
+.promotion-star-normal {
+  fill: var(--brend-color-light);
+  top: 32px;
+  right: -18px;
+}
+
+.promotion-star-smoll {
+  fill: var(--primery-color-light);
+  top: 286px;
+  right: 16px;
 }
 
 .promotion-image {
@@ -258,6 +295,8 @@ ul {
   flex-basis: calc((100% - 112px) / 3);
   text-align: center;
   font-size: 18px;
+  color: var(--color-black);
+  fill: var(--brend-color-light);
   background-color: var(--color-white);
   border-radius: 32px;
 }
@@ -344,8 +383,19 @@ ul {
 
 /* Footer */
 .footer {
+  position: relative;
   padding: 56px 0;
   background-color: var(--brend-color-dark);
+}
+
+.footer::before {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 248px;
+  height: 152px;
+  background-image: url(../images/vails-decor.png);
+  content: "";
 }
 
 .footer-container {
@@ -354,10 +404,16 @@ ul {
   gap: 24px;
 }
 
-.footer-block {
+.footer-block,
+.footer-address {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 24px;
 }
 
 .footer-note {
