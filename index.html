@@ -60,7 +60,9 @@
             <p class="hero-section-text">Косметологічна клініка</p>
             <h1 class="hero-title section-title">Beauty Zone</h1>
             <div class="hero-block">
-              <button class="button" type="button">Замовити дзвінок</button>
+              <button class="button modal-btn-open" type="button">
+                Замовити дзвінок
+              </button>
               <p class="hero-section-offer">
                 Запишись та отримай безкоштовну консультацію нашого косметолога
               </p>
@@ -292,5 +294,15 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-button modal-btn-close" type="button">
+          close
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

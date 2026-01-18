@@ -459,3 +459,38 @@ ul {
   font-size: 13px;
   color: var(--primery-color-light);
 }
+
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(1, 28, 68, 0.5);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 728px;
+  height: 680px;
+  background-color: var(--brend-color-dark);
+  border-radius: 48px;
+}
+
+.modal-button {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 32px;
+  height: 32px;
+}
