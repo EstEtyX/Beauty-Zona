@@ -163,9 +163,16 @@ ul {
   align-items: center;
 }
 
+.heder-nav {
+  flex-grow: 1;
+  max-width: 526px;
+}
+
 .header-menu {
   display: flex;
-  gap: 56px;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 24px;
   font-size: 18px;
 }
 
