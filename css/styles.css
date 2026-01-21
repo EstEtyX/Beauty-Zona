@@ -109,6 +109,7 @@ ul {
   text-decoration: none;
   font-style: normal;
   color: var(--brend-color-dark);
+  transition: color 0.2s;
 }
 
 .link:hover {
@@ -124,6 +125,7 @@ ul {
   background-color: var(--brend-color-light);
   border: 2px solid var(--brend-color-light);
   border-radius: 32px;
+  transition: color 0.2s, background-color 0.2s;
 }
 
 .button:hover {
@@ -148,6 +150,7 @@ ul {
   background-color: transparent;
   border: 1px solid var(--brend-color-dark);
   border-radius: 50%;
+  transition: color.2s, background-color 0.2s, border-color.2s;
 }
 
 .carusel-button:hover {
@@ -155,6 +158,10 @@ ul {
   background-color: var(--brend-color-light);
   border-color: var(--brend-color-light);
   cursor: pointer;
+}
+
+.carusel-button.end {
+  transform: rotate(180deg);
 }
 
 /* Header */
@@ -391,7 +398,12 @@ ul {
     rgba(1, 28, 68, 0.725825) 84.61%,
     var(--brend-color-dark) 101.39%
   );
+  transition: transform 0.2s;
   border: 1px solid #011c44; /* remove */
+}
+
+.procedures-card:hover {
+  transform: scale(1.01);
 }
 
 .procedures-text {
