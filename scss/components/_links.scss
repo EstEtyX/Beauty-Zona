@@ -1,0 +1,10 @@
+.link {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--brend-color-dark);
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--brend-color-light);
+  }
+}

@@ -6,17 +6,17 @@
     <title>Beauty Zone</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-container">
+        <div class="header__container">
           <a href="index.html">
             <img src="./images/logo.svg" alt="logo" />
           </a>
-          <nav class="heder-nav">
-            <ul class="header-menu">
+          <nav class="header__nav">
+            <ul class="header__menu">
               <li><a class="link" href="#promotion-section">Про нас</a></li>
               <li><a class="link" href="#advantees-section">Чому ми</a></li>
               <li>
@@ -25,8 +25,8 @@
               <li><a class="link" href="#contacts-section">Контакти</a></li>
             </ul>
           </nav>
-          <address class="header-address">
-            <ul class="header-social">
+          <address class="header__address">
+            <ul class="header__social">
               <li>
                 <a class="link" href="#">
                   <svg width="32" height="32">
@@ -56,14 +56,14 @@
     <main>
       <section class="hero-section" id="hero-section">
         <div class="container">
-          <div class="hero-container">
-            <p class="hero-section-text">Косметологічна клініка</p>
-            <h1 class="hero-title section-title">Beauty Zone</h1>
-            <div class="hero-block">
+          <div class="hero-section__container">
+            <p class="hero-section__text">Косметологічна клініка</p>
+            <h1 class="hero-section__title section__title">Beauty Zone</h1>
+            <div class="hero-section__block">
               <button class="button modal-btn-open" type="button">
                 Замовити дзвінок
               </button>
-              <p class="hero-section-offer">
+              <p class="hero-section__offer">
                 Запишись та отримай безкоштовну консультацію нашого косметолога
               </p>
             </div>
@@ -72,17 +72,17 @@
       </section>
       <section class="promotion-section" id="promotion-section">
         <div class="container">
-          <div class="promotion-container">
-            <div class="promotion-block">
-              <h2 class="promotion-title section-title">
+          <div class="promotion-section__container">
+            <div class="promotion-section__block">
+              <h2 class="promotion-section__title section__title">
                 Перевтілюйтесь<br />
                 в <span class="text-accent">Beauty Zone!</span>
               </h2>
-              <p class="promotion-text">
+              <p class="promotion-section__text">
                 Наша косметологічна клініка пропонує вам професійні послуги з
                 догляду за шкірою обличчя та тіла.
               </p>
-              <p class="promotion-text">
+              <p class="promotion-section__text">
                 B <span class="text-weight">Beauty Zone</span> ми гарантуємо
                 найвищі стандарти якості та приємний сервіс. Наші косметологічні
                 процедури та препарати допоможуть вам підтримувати свою красу та
@@ -90,7 +90,7 @@
                 З нами краса назавжди!
               </p>
             </div>
-            <div class="promotion-images">
+            <div class="promotion-section__images">
               <svg class="promotion-star-big" width="64" height="64">
                 <use href="./images/icons.svg#icon-star-big"></use>
               </svg>
@@ -101,12 +101,12 @@
                 <use href="./images/icons.svg#icon-star-smoll"></use>
               </svg>
               <img
-                class="promotion-image"
+                class="promotion-section__image"
                 src="./images/face-before.jpg"
                 alt="обличчя до процедур"
               />
               <img
-                class="promotion-image end"
+                class="promotion-section__image promotion-section__image--end"
                 src="./images/face-after.jpg"
                 alt="обличчя після процедур"
               />
@@ -115,8 +115,8 @@
         </div>
       </section>
       <section class="advanteges-section" id="advantees-section">
-        <div class="container limited">
-          <h2 class="section-title">
+        <div class="container container--limited">
+          <h2 class="section__title">
             Чому люди<br />
             <span class="text-accent">обирають нас</span>
           </h2>
@@ -153,7 +153,7 @@
       </section>
       <section class="procedures-section" id="procedures-section">
         <div class="container">
-          <h2 class="section-title">
+          <h2 class="section__title">
             Наші <span class="text-accent">процедури</span>
           </h2>
           <div class="procedures-container">
@@ -188,7 +188,7 @@
                 </article>
               </li>
             </ul>
-            <button class="carusel-button end" type="button">
+            <button class="carusel-button carusel-button--end" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -197,8 +197,8 @@
         </div>
       </section>
       <section class="contacts-section" id="contacts-section">
-        <div class="container limited">
-          <h2 class="section-title">
+        <div class="container container--limited">
+          <h2 class="section__title">
             Як нас <span class="text-accent">знайти</span>
           </h2>
           <div class="contacts-container">
@@ -268,19 +268,6 @@
                 >
               </p>
             </form>
-            <!-- <div class="contacts-form">
-              <h3 class="contacts-form-title">
-                Запишіться <span class="text-accent">безкоштовно</span> та
-                отримайте подарунок
-              </h3>
-              <button class="form-button button" type="submit">
-                Записатись безкоштовно
-              </button>
-              <p class="form-confidentiality">
-                Натискаючи на кнопку я погоджуюсь<br />
-                <a class="form-link" href="#">з політикою конфіденційності </a>
-              </p>
-            </div> -->
           </div>
         </div>
       </section>
@@ -371,7 +358,7 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="modal-title section-title">Замовити дзвінок</h2>
+        <h2 class="modal-title section__title">Замовити дзвінок</h2>
         <form class="modal-form" name="modal-form" autocomplete="off">
           <h3 class="form-title">
             Запишіться <span class="text-accent">безкоштовно</span> та отримайте
