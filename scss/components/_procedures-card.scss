@@ -1,4 +1,5 @@
 .procedures-card {
+  position: relative;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -14,13 +15,22 @@
     var(--brend-color-dark) 101.39%
   );
   transition: transform 0.2s;
-  border: 1px solid #011c44; /* remove */
 
   &:hover {
     transform: scale(1.01);
   }
 
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 120px;
+  }
+
   &__text {
+    z-index: 1;
     margin-bottom: 32px;
   }
 }
