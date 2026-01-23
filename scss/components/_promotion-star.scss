@@ -1,0 +1,19 @@
+.promotion-star {
+  &--big,
+  &--normal,
+  &--smoll {
+    position: absolute;
+  }
+
+  &--big {
+    @include stars(var(--brend-color-dark), 350px, 290px);
+  }
+
+  &--normal {
+    @include stars(var(--brend-color-light), 32px, -18px);
+  }
+
+  &--smoll {
+    @include stars(var(--primery-color-light), 286px, 16px);
+  }
+}

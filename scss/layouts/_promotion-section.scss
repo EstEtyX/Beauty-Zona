@@ -46,27 +46,3 @@
     }
   }
 }
-
-.promotion-star-big,
-.promotion-star-normal,
-.promotion-star-smoll {
-  position: absolute;
-}
-
-.promotion-star-big {
-  fill: var(--brend-color-dark);
-  top: 350px;
-  left: 142px;
-}
-
-.promotion-star-normal {
-  fill: var(--brend-color-light);
-  top: 32px;
-  right: -18px;
-}
-
-.promotion-star-smoll {
-  fill: var(--primery-color-light);
-  top: 286px;
-  right: 16px;
-}

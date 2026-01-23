@@ -1,0 +1,5 @@
+@mixin stars($fill, $top, $right) {
+  fill: $fill;
+  top: $top;
+  right: $right;
+}

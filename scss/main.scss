@@ -6,6 +6,7 @@
 @import "./base";
 @import "./utils/utils";
 @import "./utils/text";
+@import "./utils/mixins";
 
 @import "./components/advantages-card";
 @import "./components/buttons";
@@ -13,6 +14,7 @@
 @import "./components/input";
 @import "./components/links";
 @import "./components/procedures-card";
+@import "./components/promotion-star";
 
 @import "./layouts/advantages-section";
 @import "./layouts/backdrop";
