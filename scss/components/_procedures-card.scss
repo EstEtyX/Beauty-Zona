@@ -1,5 +1,6 @@
 .procedures-card {
   position: relative;
+  overflow: hidden;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -8,12 +9,6 @@
   font-size: 22px;
   color: var(--color-white);
   border-radius: 8px 120px;
-  background-image: linear-gradient(
-    180.05deg,
-    rgba(1, 28, 68, 0) 48.53%,
-    rgba(1, 28, 68, 0.725825) 84.61%,
-    var(--brend-color-dark) 101.39%
-  );
   transition: transform 0.2s;
 
   &:hover {
@@ -26,7 +21,19 @@
     right: 0;
     width: 100%;
     height: 100%;
-    border-radius: 8px 120px;
+    object-fit: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0.6) 80%,
+      rgba(0, 0, 0, 0.9) 100%
+    );
   }
 
   &__text {
