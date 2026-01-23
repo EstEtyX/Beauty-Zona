@@ -1,0 +1,21 @@
+.advantages-section {
+  padding: 88px 0 48px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  &__item {
+    padding: 24px 32px;
+    flex-basis: calc((100% - 112px) / 3);
+    text-align: center;
+    font-size: 18px;
+    color: var(--color-black);
+    fill: var(--brend-color-light);
+    background-color: var(--color-white);
+    border-radius: 32px;
+  }
+}

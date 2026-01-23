@@ -1,0 +1,26 @@
+.procedures-card {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+  aspect-ratio: 3/4;
+  font-size: 22px;
+  color: var(--color-white);
+  border-radius: 8px 120px;
+  background-image: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    var(--brend-color-dark) 101.39%
+  );
+  transition: transform 0.2s;
+  border: 1px solid #011c44; /* remove */
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  &__text {
+    margin-bottom: 32px;
+  }
+}

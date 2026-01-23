@@ -1,0 +1,25 @@
+.contacts-section {
+  padding: 48px 0 96px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  &__map {
+    width: 100%;
+    max-width: 606px;
+    height: 480px;
+    border: none;
+    border-radius: 32px;
+  }
+
+  &__form {
+    padding: 48px 56px;
+    max-width: 422px;
+    max-height: 482px;
+    background-color: var(--brend-color-dark);
+    border-radius: 32px;
+  }
+}

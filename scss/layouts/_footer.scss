@@ -1,0 +1,46 @@
+.footer {
+  position: relative;
+  margin: 0 auto;
+  padding: 56px 0;
+  width: 100%;
+  max-width: 1440px;
+  background-color: var(--brend-color-dark);
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 248px;
+    height: 152px;
+    background-image: url(../images/vails-decor.png);
+    content: "";
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  &__link {
+    font-size: 16px;
+    color: var(--color-white);
+  }
+
+  &__block,
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__social {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__note {
+    font-size: 13px;
+    color: var(--primery-color-light);
+  }
+}
