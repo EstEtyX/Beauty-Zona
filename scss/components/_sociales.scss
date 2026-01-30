@@ -1,0 +1,19 @@
+.sociale {
+  &__header,
+  &__footer,
+  &__mobile-menu {
+    display: flex;
+  }
+
+  &__header {
+    gap: 32px;
+  }
+
+  &__footer {
+    gap: 24px;
+  }
+
+  &__mobile-menu {
+    gap: 16px;
+  }
+}
