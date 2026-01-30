@@ -1,7 +1,7 @@
 .hero-section {
   position: relative;
   margin: 0 auto;
-  padding: 120px 0 128px;
+  padding: 72px 0 56px;
   width: 100%;
   max-width: 1440px;
   background-image: linear-gradient(
@@ -13,7 +13,8 @@
     ),
     url(../images/hero-image.avif);
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: center top;
+  background-size: cover;
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -28,36 +29,69 @@
       url(../images/hero-image@2x.avif);
   }
 
+  @media screen and (min-width: $bp-tablet) {
+    padding: 96px 0 72px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 120px 0 128px;
+  }
+
   &__container {
-    margin: 0 0 0 206px;
-    width: 100%;
-    max-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      text-align: left;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      margin: 0 0 0 206px;
+      max-width: 480px;
+    }
   }
 
   &__text {
-    margin-bottom: 16px;
-    font-size: 18px;
-  }
+    margin-left: 20px;
+    font-size: 12px;
 
-  &__title {
-    margin-bottom: 40px;
-    text-align: left;
-    font-size: 140px;
-    line-height: 0.8;
+    @media screen and (min-width: $bp-tablet) {
+      margin-left: 32px;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 16px;
+      font-size: 18px;
+    }
   }
 
   &__block {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 14px;
-    width: 100%;
-    max-width: 232px;
+    gap: 8px;
+    max-width: 208px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 14px;
+      max-width: 232px;
+    }
   }
 
   &__offer {
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     color: var(--primery-color-dark);
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 12px;
+    }
   }
 }
 
