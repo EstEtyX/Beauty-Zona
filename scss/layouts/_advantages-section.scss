@@ -1,5 +1,12 @@
 .advantages-section {
   padding: 88px 0 48px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(43, 127, 255, 0.2) 39.74%,
+    rgba(43, 127, 255, 0) 54.16%,
+    rgba(43, 127, 255, 0) 66.66%
+  );
+  background-position: top;
 
   &__list {
     display: flex;

@@ -5,15 +5,8 @@
   text-align: center;
   justify-content: center;
   align-items: flex-end;
-  aspect-ratio: 3/4;
-  font-size: 22px;
-  color: var(--color-white);
+  aspect-ratio: 3/4; //update//
   border-radius: 8px 120px;
-  transition: transform 0.2s;
-
-  &:hover {
-    transform: scale(1.01);
-  }
 
   &__image {
     position: absolute;
@@ -39,5 +32,7 @@
   &__text {
     z-index: 1;
     margin-bottom: 32px;
+    font-size: 22px;
+    color: var(--color-white);
   }
 }
