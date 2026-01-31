@@ -1,10 +1,11 @@
 .advantages-card {
-    padding: 24px 32px;
-    flex-basis: calc((100% - 112px) / 3);
-    text-align: center;
-    font-size: 18px;
-    color: var(--color-black);
-    fill: var(--brend-color-light);
-    background-color: var(--color-white);
-    border-radius: 32px;
-  }
+  padding: 24px 32px;
+  flex-basis: calc((100% - 112px) / 3);
+  text-align: center;
+  font-size: 18px;
+  color: var(--color-black);
+  fill: var(--brend-color-light);
+  background-color: var(--color-white);
+  border-radius: 32px;
+  box-shadow: 0px 4px 4px 0px var(--color-shedow);
+}
