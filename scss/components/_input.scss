@@ -1,11 +1,15 @@
 .input {
-  padding: 16px 32px;
+  padding: 16px 24px;
   width: 100%;
   font-size: 13px;
   color: var(--color-white);
   background-color: transparent;
   border: 2px solid var(--primery-color-light);
   border-radius: 32px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 16px 32px;
+  }
 
   &:focus {
     background-color: var(--primery-color-light);

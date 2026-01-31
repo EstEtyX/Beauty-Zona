@@ -22,4 +22,13 @@
     background-color: transparent;
     cursor: pointer;
   }
+
+  &__form {
+    &--contact {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 8px;
+      max-width: 256px;
+    }
+  }
 }
