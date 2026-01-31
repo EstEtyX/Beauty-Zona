@@ -1,0 +1,58 @@
+.form {
+  &__contact {
+    padding: 42px 24px;
+    background-color: var(--brend-color-dark);
+    border-radius: 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 422px;
+      max-height: 482px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 48px 56px;
+    }
+  }
+
+  &__modal {
+    margin: 0 auto;
+    max-width: 312px;
+    max-height: 408px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-white);
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+    }
+  }
+
+  &__fild {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  &__terms {
+    margin: 0 auto;
+    max-width: 180px;
+    text-align: center;
+    font-size: 11px;
+    color: var(--primery-color-light);
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 192px;
+      font-size: 12px;
+    }
+  }
+
+  &__terms-link {
+    justify-content: center;
+    color: var(--primery-color-light);
+    text-underline-offset: 2px;
+  }
+}

@@ -331,16 +331,12 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <form
-              class="contacts-section__form"
-              name="contacts-form"
-              autocomplete="off"
-            >
-              <h3 class="contacts-section__form-title">
+            <form class="form__contact" name="form-contact" autocomplete="off">
+              <h3 class="form__title">
                 Запишіться <span class="text-accent">безкоштовно</span> та
                 отримайте подарунок
               </h3>
-              <div class="contacts-section__form-fild">
+              <div class="form__fild">
                 <label class="visually-hidden" for="user-name"
                   >Ваше ім'я та прізвище
                 </label>
@@ -354,7 +350,7 @@
                 />
               </div>
 
-              <div class="contacts-section__form-fild">
+              <div class="form__fild">
                 <label class="visually-hidden" for="user-tel"
                   >Ваш номер телефону
                 </label>
@@ -368,7 +364,7 @@
                 />
               </div>
 
-              <div class="contacts-section__form-fild">
+              <div class="form__fild">
                 <label class="visually-hidden" for="user-email"
                   >Ваша електронна пошта
                 </label>
@@ -381,14 +377,14 @@
                   required
                 />
               </div>
-              <button class="button button__form--contact" type="submit">
+              <button class="button button__form" type="submit">
                 Записатись безкоштовно
               </button>
-              <p class="form-terms">
+              <p class="form__terms">
                 Натискаючи на кнопку я погоджуюсь
-                <a class="form-terms__link" href="#"
-                  >з політикою конфіденційності</a
-                >
+                <a class="form__terms-link" href="#"
+                  >з політикою конфіденційності
+                </a>
               </p>
             </form>
           </div>
@@ -476,19 +472,19 @@
 
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal__button--close modal-btn-close" type="button">
+        <button class="button__close modal-btn-close" type="button">
           <svg width="16" height="16">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <h2 class="modal__title section__title">Замовити дзвінок</h2>
-        <form class="modal__form" name="modal-form" autocomplete="off">
-          <h3 class="modal__title">
+        <form class="form__modal" name="form-modal" autocomplete="off">
+          <h3 class="form__title">
             Запишіться <span class="text-accent">безкоштовно</span> та отримайте
             подарунок
           </h3>
 
-          <div class="modal__fild">
+          <div class="form__fild">
             <label class="visually-hidden" for="user-name"
               >Ваше ім'я та прізвище
             </label>
@@ -502,7 +498,7 @@
             />
           </div>
 
-          <div class="modal__fild">
+          <div class="form__fild">
             <label class="visually-hidden" for="user-tel"
               >Ваш номер телефону
             </label>
@@ -516,7 +512,7 @@
             />
           </div>
 
-          <div class="modal__fild">
+          <div class="form__fild">
             <label class="visually-hidden" for="user-email"
               >Ваша електронна пошта
             </label>
@@ -530,12 +526,12 @@
             />
           </div>
 
-          <button class="modal__button button" type="submit">
+          <button class="button button__form" type="submit">
             Записатись безкоштовно
           </button>
-          <p class="modal__terms">
+          <p class="form__terms">
             Натискаючи на кнопку я погоджуюсь
-            <a class="modal__terms-link" href="#"
+            <a class="form__terms-link" href="#"
               >з політикою конфіденційності</a
             >
           </p>

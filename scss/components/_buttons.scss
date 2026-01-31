@@ -24,11 +24,49 @@
   }
 
   &__form {
-    &--contact {
-      display: block;
-      margin: 0 auto;
-      margin-bottom: 8px;
-      max-width: 256px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    max-width: 256px;
+    font-size: 14px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 296px;
+    }
+
+    &:hover {
+      color: var(--brend-color-light);
+      background-color: transparent;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 32px;
+    height: 32px;
+    color: var(--color-white);
+    background-color: transparent;
+    border: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      top: 32px;
+      right: 32px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      top: 40px;
+      right: 40px;
+    }
+
+    &:hover {
+      color: var(--brend-color-light);
+      cursor: pointer;
     }
   }
 }
