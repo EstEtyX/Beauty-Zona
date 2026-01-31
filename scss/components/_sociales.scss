@@ -1,4 +1,8 @@
 .sociale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &__header,
   &__footer,
   &__mobile-menu {
@@ -10,7 +14,12 @@
   }
 
   &__footer {
-    gap: 24px;
+    justify-content: center;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 24px;
+    }
   }
 
   &__mobile-menu {
