@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
 
+    <!-- Style -->
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -245,78 +250,106 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="procedures-section" id="procedures-section">
+      <section class="procedures-section" id="procedures-section">
         <div class="container">
           <h2 class="section__title">
             Наші <span class="text-accent">процедури</span>
           </h2>
-          <div class="procedures-section__container">
-            <button class="carusel-button" type="button">
+          <div class="procedures-section__slider">
+            <button
+              class="procedures-section__button carusel-button prev"
+              type="button"
+            >
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
-            <ul class="procedures-section__list">
-              <li class="procedures-section__item">
-                <article class="procedures-card">
-                  <img
-                    class="procedures-card__image"
-                    srcset="
-                      ./images/face-mask.avif    1x,
-                      ./images/face-mask@2x.avif 2x
-                    "
-                    src="./images/face-mask.avif"
-                    alt="дівчині на обличчя наносять крем-маску"
-                  />
-                  <p class="procedures-card__text">
-                    Маски<br />
-                    для обличчя
-                  </p>
-                </article>
-              </li>
-              <li class="procedures-section__item">
-                <article class="procedures-card">
-                  <img
-                    class="procedures-card__image"
-                    srcset="
-                      ./images/face-injection.avif    1x,
-                      ./images/face-injection@2x.avif 2x
-                    "
-                    src="./images/face-injection.avif"
-                    alt="дівчині над бровою вводять ін'єкцію"
-                  />
-                  <p class="procedures-card__text">
-                    Ін'єкції<br />
-                    для обличчя
-                  </p>
-                </article>
-              </li>
-              <li class="procedures-section__item">
-                <article class="procedures-card">
-                  <img
-                    class="procedures-card__image"
-                    srcset="
-                      ./images/face-clean.avif    1x,
-                      ./images/face-clean@2x.avif 2x
-                    "
-                    src="./images/face-clean.avif"
-                    alt="обличчя дівчини після очищення"
-                  />
-                  <p class="procedures-card__text">
-                    Очищення<br />
-                    обличчя
-                  </p>
-                </article>
-              </li>
-            </ul>
-            <button class="carusel-button carusel-button--end" type="button">
+            <div class="procedures-section__container swiper-container">
+              <ul class="procedures-section__list swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="procedure-card">
+                    <img
+                      class="procedure-card__image"
+                      srcset="
+                        ./images/face-mask.avif    1x,
+                        ./images/face-mask@2x.avif 2x
+                      "
+                      src="./images/face-mask.avif"
+                      alt="дівчині на обличчя наносять крем-маску"
+                    />
+                    <p class="procedure-card__text">
+                      Маски<br />
+                      для обличчя
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedure-card">
+                    <img
+                      class="procedure-card__image"
+                      srcset="
+                        ./images/face-injection.avif    1x,
+                        ./images/face-injection@2x.avif 2x
+                      "
+                      src="./images/face-injection.avif"
+                      alt="дівчині над бровою вводять ін'єкцію"
+                    />
+                    <p class="procedure-card__text">
+                      Ін'єкції<br />
+                      для обличчя
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedure-card">
+                    <img
+                      class="procedure-card__image"
+                      srcset="
+                        ./images/face-clean.avif    1x,
+                        ./images/face-clean@2x.avif 2x
+                      "
+                      src="./images/face-clean.avif"
+                      alt="обличчя дівчини після очищення"
+                    />
+                    <p class="procedure-card__text">
+                      Очищення<br />
+                      обличчя
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedure-card">
+                    <img
+                      class="procedure-card__image"
+                      srcset="
+                        ./images/face-injection.avif    1x,
+                        ./images/face-injection@2x.avif 2x
+                      "
+                      src="./images/face-injection.avif"
+                      alt="дівчині над бровою вводять ін'єкцію"
+                    />
+                    <p class="procedure-card__text">
+                      Ін'єкції<br />
+                      для обличчя
+                    </p>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination">
+                <span class="pagination__button"></span>
+              </div>
+            </div>
+            <button
+              class="procedures-section__button carusel-button next"
+              type="button"
+            >
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
       <section class="contacts-section" id="contacts-section">
         <div class="container container--limited">
           <h2 class="section__title">
@@ -540,6 +573,8 @@
     </div>
 
     <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/procedures-slider.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

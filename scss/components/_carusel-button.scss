@@ -19,7 +19,7 @@
     cursor: pointer;
   }
 
-  &--end {
+  &.next {
     transform: rotate(180deg);
   }
 }

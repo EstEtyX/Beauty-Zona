@@ -1,0 +1,26 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  @media screen and (min-width: $bp-tablet) {
+    gap: 24px;
+  }
+
+  &__button {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    background-color: var(--primery-color-light);
+    border-radius: 50%;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 12px;
+      height: 12px;
+    }
+
+    &--active {
+      background-color: var(--brend-color-light);
+    }
+  }
+}

@@ -4,6 +4,7 @@
   padding: 72px 0 56px;
   width: 100%;
   max-width: 1440px;
+  aspect-ratio: 8/4;
   background-image: linear-gradient(
       89.38deg,
       var(--color-white) 30.62%,
@@ -15,6 +16,11 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+
+  @media screen and (min-width: $bp-tablet) {
+    background-position: right top;
+    background-size: contain;
+  }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
